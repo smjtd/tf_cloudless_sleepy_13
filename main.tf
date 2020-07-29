@@ -7,6 +7,11 @@ data "template_file" "test" {
   }
 }
 
+# This is just to make sure that ibm provider is instantiated
+data "ibm_schematics_workspace" "test" {
+  workspace_id = "my-workspace-id"
+}
+
 resource "null_resource" "sleep" {
   triggers = {
     uuid = uuid()
