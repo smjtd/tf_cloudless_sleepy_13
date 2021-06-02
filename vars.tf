@@ -15,7 +15,7 @@ variable "sensitive_var" {
 
 variable "sleepy_time" {
   description = "How long our local-exec will take a nap."
-  default     = 0
+  default     = 10
 }
 
 variable "TF_VERSION" {
