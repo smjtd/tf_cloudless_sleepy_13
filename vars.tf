@@ -5,13 +5,13 @@ variable "sample_var" {
   default     = "hello"
 }
 
-variable "sensitive_var" {
-  description = "A sensitive var to pass to the template."
-  default     = "I am Sensitivie"  
+variable "Network_type" {
+  description = "Type of network"
 }
 
-variable "network_type" {
-  description = "Type of network"
+variable "sensitive_var" {
+  description = "A sensitive var to pass to the template."
+  default     = "I am Sensitivie. Make me secure"  
 }
 
 variable "sleepy_time" {
