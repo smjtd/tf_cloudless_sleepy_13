@@ -28,10 +28,19 @@ resource "null_resource" "sleep" {
   }
 
   provisioner "local-exec" {
-    command = "sleep 10m"
+    command = "sleep 2"
   }
 }
 
+resource "null_resource" "sleep2" {
+  triggers = {
+    uuid = uuid()
+  }
+
+  provisioner "local-exec" {
+    command = "sleep 50"
+  }
+}
 /*resource "ibm_is_lb" "lb" {
   name    = "loadbalancer1"
   type = var.Network_type
