@@ -14,10 +14,10 @@
 #   default     = "I am Sensitivie. Make me secure"  
 # }
 
-# variable "sleepy_time" {
-#   description = "How long our local-exec will take a nap."
-#   default     = 0
-# }
+variable "sleepy_time" {
+  description = "How long our local-exec will take a nap."
+  default     = 0
+}
 
 # variable "TF_VERSION" {
 #   description = "terraform version."
