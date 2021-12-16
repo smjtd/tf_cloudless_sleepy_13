@@ -38,7 +38,7 @@ resource "null_resource" "sleep2" {
   }
 
   provisioner "local-exec" {
-    command = "sleep 50"
+    command = "sleep ${var.sleepy_time}"
   }
 }
 /*resource "ibm_is_lb" "lb" {
